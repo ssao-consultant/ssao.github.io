@@ -1,0 +1,12 @@
+
+@Controller
+class HomeController {
+  @GetMapping("/")
+  String home() {
+    return "index";
+  }
+}
+
+With this controller, when the user visits the home page ("/") Spring will render a template at 
+classpath:/templates/index.html, which means in the directory src/main/resources/templates in your project.
+
